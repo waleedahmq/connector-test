@@ -1,1 +1,0 @@
-This is a workaround to commit an empty folder.

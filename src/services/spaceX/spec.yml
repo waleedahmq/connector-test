@@ -1,0 +1,23 @@
+openapi: 3.0.3
+info:
+  title: SpaceX
+  version: 3.0.0
+servers:
+  - url: "https://api.spacexdata.com"
+externalDocs:
+  description: SpaceX Developer Docs
+  url: "https://docs.spacexdata.com"
+security:
+  - apiKey: []
+paths:
+  /v3/rockets/{rocket_id}:
+    get:
+      operationId: rocketsOne
+      parameters:
+        - in: path
+          name: rocket_id
+          required: true
+      responses:
+        "200":
+          description: "Get rocket information"
+          content: {}

@@ -57,7 +57,7 @@ void (async () => {
           .toTimeString()
           .substring(0, 8)}} {magenta http} {red ERROR} ${err}`
       );
-      res.status(500).send({ message: "something went wrong" });
+      res.status(500).send({ message: err.message || "something went wrong" });
     }
   });
 
